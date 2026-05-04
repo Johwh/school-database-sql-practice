@@ -22,14 +22,29 @@ Este projeto foi criado para treinar e demonstrar conhecimentos em:
 
 O sistema é composto pelas seguintes tabelas:
 
-- **Alunos** → dados dos estudantes
-- **Professores** → dados dos professores
-- **Disciplinas** → matérias disponíveis
-- **Turmas** → turmas da escola
-- **Turma_Disciplinas** → relação entre turmas e disciplinas
-- **Turma_Alunos** → matrícula dos alunos nas turmas
-- **Notas** → desempenho dos alunos
+- Alunos → dados dos estudantes  
+- Professores → dados dos professores  
+- Disciplinas → matérias disponíveis  
+- Turmas → turmas da escola  
+- Turma_Disciplinas → relação entre turmas e disciplinas  
+- Turma_Alunos → matrícula dos alunos nas turmas  
+- Notas → desempenho dos alunos  
 
 ---
 
 ## 🗂️ Estrutura do Projeto
+
+📁 escola-sqlite-banco-de-dados  
+ ├── schema.sql → criação das tabelas  
+ ├── inserts.sql → inserção de dados  
+ ├── queries.sql → consultas SQL  
+ ├── README.md → documentação do projeto  
+
+---
+
+## 🔍 Exemplos de Consultas
+
+### Listar todos os alunos ordenados por nome
+```sql
+SELECT * FROM Alunos
+ORDER BY Nome ASC;
